@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="/bitechalk/">
+  <title>Food Recipe</title></head>
+<body>
+     
+    
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <ul>
+            <li class="search-bar">
+                <input type="text" placeholder="Search">
+                <a href="#search"><img src="images/search-icon-design-in-blue-circle-png.webp" alt="Search"></a>
+            </li>
+            <li class="avatar">
+                <img src="images/user-avatar.png" alt="Avatar">
+            </li>
+        </ul>
+      </div>
+      <h1>Recipe search</h1>
+   <div class="input_ingredients">
+    <form method="get" action="{% url 'search_results' %}">
+        <label for="ingredient1"></label>
+        <input class="ingredients" type="text" id="ingredient1" name="ingredient1">
+        <br>
+        <label for="ingredient2"></label>
+        <input class="ingredients" type="text" id="ingredient2" name="ingredient2">
+        <br>
+        <label for="ingredient3"></label>
+        <input class="ingredients" type="text" id="ingredient3" name="ingredient3">
+        <br>
+        <label for="ingredient4"></label>
+        <input class="ingredients" type="text" id="ingredient4" name="ingredient4">
+        <br>
+        <input type="submit" value="Search">
+     </form>
+    </div>
+    
+      
+</body>
+</html>
