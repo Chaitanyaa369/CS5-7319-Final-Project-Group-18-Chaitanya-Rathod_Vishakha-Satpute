@@ -13,29 +13,36 @@
         <ul>
             <li class="search-bar">
                 <input type="text" placeholder="Search">
-                <a href="#search"><img src="images/search-icon-design-in-blue-circle-png.webp" alt="Search"></a>
+                <a href="#search" class = "sbutton"><img src="images/search-icon-design-in-blue-circle-png.webp" alt="Search"></a>
             </li>
             <li class="avatar">
                 <img src="images/user-avatar.png" alt="Avatar">
             </li>
         </ul>
       </div>
-      <h1>Recipe search</h1>
-   <div class="input_ingredients">
+    <div class = "container">
+    <div class="content">
+    <h1>Food Recipe</h1>
+    <div class="input_ingredients">
     <form method="get" action="{% url 'search_results' %}">
         <label for="ingredient1"></label>
-        <input class="ingredients" type="text" id="ingredient1" name="ingredient1">
+        <input class="ingredients" type="text" id="ingredient1" name="ingredient1" label="Ingredient 1">
         <br>
         <label for="ingredient2"></label>
-        <input class="ingredients" type="text" id="ingredient2" name="ingredient2">
+        <input class="ingredients" type="text" id="ingredient2" name="ingredient2" label="Ingredient 2">
         <br>
         <label for="ingredient3"></label>
-        <input class="ingredients" type="text" id="ingredient3" name="ingredient3">
+        <input class="ingredients" type="text" id="ingredient3" name="ingredient3" label="Ingredient 3">
         <br>
         <label for="ingredient4"></label>
-        <input class="ingredients" type="text" id="ingredient4" name="ingredient4">
+        <input class="ingredients" type="text" id="ingredient4" name="ingredient4" label="Ingredient 4">
         <br>
-        <input type="submit" value="Search">
+        <input type="submit" id="search" value="Search">
+    </div>
+    </div>
+    <div class="image">
+        <img src="images/pizza5.jpg" alt="Your Image">
+    </div>
      </form>
     </div>
     

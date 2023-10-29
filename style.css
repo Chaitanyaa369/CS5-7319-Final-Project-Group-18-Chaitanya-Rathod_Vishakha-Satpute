@@ -5,15 +5,25 @@
 
 }
 
+html {
+  /* To make use of full height of page*/
+  max-height: 95%;
+  margin: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     /*background-image: url('images/pexels-ella-olsson-1640774.jpg');
     background-size: cover;*/
+    max-height: 95%;
+    margin: 0%;
 }
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #ef8201;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;  
   }
   
   /* Style the links inside the navigation bar */
@@ -54,14 +64,17 @@ body {
     float: right;
     padding: 6px;
     border: none;
-    margin-top: 8px;
+    margin-top: 12px;
     margin-right: 16px;
     font-size: 17px;
+    border-radius: 5px;
   }
 
   ul {
     list-style: none;
     display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 li {
@@ -72,13 +85,15 @@ li {
     display: flex;
     align-items: center;
     height: 30px;
+    
 }
 
-.search-bar input {
+/*.search-bar input {
+    margin-top: 12px; 
     padding: 5px;
     border: none;
     border-radius: 5px;
-}
+}*/
 
 .search-bar button {
     background-color: #0073e6;
@@ -97,6 +112,7 @@ li {
 
 .search-bar a{
     padding: 2px 4px 2px 4px;
+    margin-top: 15px;
 }
 
 .avatar img {
@@ -104,6 +120,7 @@ li {
     width: 40px;
     height: 40px;
 }
+
 
 h1 {
     font-family: 'BiteChalk', sans-serif;
@@ -156,15 +173,57 @@ main {
   
 
   /* Add some padding inside the card container */
-  .container {
+  /*.container {
     padding: 2px 16px;
-  }
+  }*/
 
 
-.input_ingredientd .ingredients {
+.input_ingredients .ingredients {
+ margin: 10px 5px 10px 5px;
  outline: none;
  border: 0 ;
  border-radius: 0.2rem;
- background: #393939;
+ background: #d1bebe;
  color: white;
+}
+
+.input_ingredients #search{
+    margin-top: 10px;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:15px; 
+    min-width: 90px;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.content {
+  flex: 1;
+  margin-left: 10px;
+  padding: 20px; /* Adjust as needed */
+  /* Your content styles here */
+  text-align: center;
+}
+
+
+.image {
+  flex: 1;
+  /*padding: 20px; Adjust as needed */
+  /* Optional styles for the image container */
+}
+
+.image img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  height: 70%;
+  /* Additional image styles */
 }
