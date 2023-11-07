@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <ul>
+        {% for recipe in recipes %}
+            <li>
+                <h2>{{ recipe.title }}</h2>
+                <p>Ingredients:</p>
+                <ul>
+                    {% for ingredient in recipe.usedIngredients %}
+                        <li>{{ ingredient.amount }} {{ ingredient.unit }} - {{ ingredient.name }}</li>
+                    {% endfor %}
+                </ul>
+                <p>Instructions:</p>
+                <ol>
+                    {% for step in (recipe.instructions.split('.') if recipe.instructions is defined else []) %}
+                        <li>{{ step }}</li>
+                    {% endfor %}
+                </ol>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

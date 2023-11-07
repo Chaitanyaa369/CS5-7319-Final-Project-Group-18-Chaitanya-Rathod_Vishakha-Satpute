@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>Recipes</h2>
+    <ul>
+        {% for recipe in recipes %}
+            <li>
+                {{ recipe.title }} - {{ recipe.instructions }}
+                <a href="{{ url_for('edit_recipe', recipe_id=recipe.id) }}">Edit</a>
+                <a href="{{ url_for('delete_recipe', recipe_id=recipe.id) }}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <!-- <a href="{{ url_for('add_recipe') }}">Add Recipe</a>-->
+{% endblock %}

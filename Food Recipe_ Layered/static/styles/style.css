@@ -1,0 +1,229 @@
+/* styles.css */
+@font-face {
+    font-family: 'BiteChalk'; 
+    src: url('/bitechalk/BiteChalk.ttf') format('truetype');
+
+}
+
+html {
+  /* To make use of full height of page*/
+  max-height: 95%;
+  margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /*background-image: url('images/pexels-ella-olsson-1640774.jpg');
+    background-size: cover;*/
+    max-height: 95%;
+    margin: 0%;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #ef8201;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;  
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    /*background-color: #04AA6D;*/
+    color: white;
+  }
+
+  /*.avatar {
+    float: right;
+    
+    border: none;
+   
+    font-size: 17px;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }*/
+
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 12px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+li {
+    margin: 0 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    
+}
+
+/*.search-bar input {
+    margin-top: 12px; 
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}*/
+
+.search-bar button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+
+.search-bar img {
+    padding: 10px auto;
+    width: 30px;
+    height: 30px;
+}
+
+.search-bar a{
+    padding: 2px 4px 2px 4px;
+    margin-top: 15px;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+
+h1 {
+    font-family: 'BiteChalk', sans-serif;
+}
+
+header{
+    
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+  }
+  
+
+  /* Add some padding inside the card container */
+  /*.container {
+    padding: 2px 16px;
+  }*/
+
+
+.input_ingredients .ingredients {
+ margin: 10px 5px 10px 5px;
+ outline: none;
+ border: 0 ;
+ border-radius: 0.2rem;
+ background: #d1bebe;
+ color: white;
+}
+
+.input_ingredients #search{
+    margin-top: 10px;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:15px; 
+    min-width: 90px;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.content {
+  flex: 1;
+  margin-left: 10px;
+  padding: 20px; /* Adjust as needed */
+  /* Your content styles here */
+  text-align: center;
+}
+
+
+.image {
+  flex: 1;
+  /*padding: 20px; Adjust as needed */
+  /* Optional styles for the image container */
+}
+
+.image img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  height: 70%;
+  /* Additional image styles */
+}

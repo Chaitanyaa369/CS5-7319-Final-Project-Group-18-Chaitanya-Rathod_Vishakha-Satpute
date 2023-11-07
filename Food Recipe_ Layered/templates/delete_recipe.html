@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>Delete Recipe</h2>
+    <p>Are you sure you want to delete the following recipe?</p>
+    <p>{{ recipe.title }} - {{ recipe.instructions }}</p>
+    <form method="POST">
+        <input type="submit" value="Delete Recipe">
+    </form>
+    <a href="{{ url_for('index') }}">Cancel</a>
+{% endblock %}
